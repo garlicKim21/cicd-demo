@@ -145,14 +145,12 @@
                 </div>
                 <div class="info-item">버전: <span id="appVersion">-</span></div>
                 <div class="info-item">빌드 번호: <span id="buildNumber">-</span></div>
-                <div class="info-item">환경: <span id="environment">-</span></div>
             </div>
 
             <div class="info-card">
                 <h3>🐳 컨테이너 정보</h3>
                 <div class="info-item">Node.js 버전: <span id="nodeVersion">-</span></div>
                 <div class="info-item">플랫폼: <span id="platform">-</span></div>
-                <div class="info-item">업타임: <span id="uptime">-</span></div>
                 <div class="info-item">배포 시간: <span id="deployTime">-</span></div>
             </div>
         </div>
@@ -176,10 +174,8 @@
                 
                 document.getElementById('appVersion').textContent = infoData.version;
                 document.getElementById('buildNumber').textContent = infoData.buildNumber;
-                document.getElementById('environment').textContent = infoData.environment;
                 document.getElementById('nodeVersion').textContent = infoData.nodeVersion;
                 document.getElementById('platform').textContent = infoData.platform;
-                document.getElementById('uptime').textContent = Math.floor(infoData.uptime) + '초';
                 document.getElementById('deployTime').textContent = 
                     new Date(infoData.deployTime).toLocaleString('ko-KR');
 
