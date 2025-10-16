@@ -114,20 +114,13 @@
             animation: pulse 2s infinite;
         }
 
-        .refresh-btn {
-            background: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: all 0.3s ease;
-        }
 
-        .refresh-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
+        .version-display {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 300;
+            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -155,7 +148,8 @@
             </div>
         </div>
 
-        <button class="refresh-btn" onclick="loadAppInfo()">🔄 정보 새로고침</button>
+        <!-- TODO: 버전 업데이트 시 여기를 수정하세요 (예: v1.0 -> v2.0) -->
+        <div class="version-display">v1.0</div>
     </div>
 
     <script>
